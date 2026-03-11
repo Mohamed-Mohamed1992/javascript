@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JS Modules Calculator</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#3a7bd5,#00d2ff);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.container{
+    background:white;
+    padding:40px 30px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    text-align:center;
+    width:100%;
+    max-width:400px;
+}
+
+h1{
+    margin-bottom:25px;
+    font-size:28px;
+}
+
+.result{
+    background:#f4f4f4;
+    margin:12px 0;
+    padding:15px;
+    border-radius:8px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+/* Tablet */
+
+@media (max-width:768px){
+
+h1{
+    font-size:24px;
+}
+
+.result{
+    font-size:18px;
+}
+
+}
+
+/* Mobile */
+
+@media (max-width:480px){
+
+.container{
+    padding:25px 20px;
+}
+
+h1{
+    font-size:20px;
+}
+
+.result{
+    font-size:16px;
+    padding:12px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>JS Modules Calculator</h1>
+
+<div id="multiply" class="result"></div>
+<div id="divide" class="result"></div>
+<div id="subtract" class="result"></div>
+
+</div>
+
+<script type="module" src="theCaller.js"></script>
+
+</body>
+</html>
